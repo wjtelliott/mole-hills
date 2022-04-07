@@ -6,17 +6,11 @@
 }
 
 .hill div {
-  width: 20vw;
+  width: 20vw!important;
   height: 10vh;
   margin: 4em;
 }
 
 .hill div img {
   width: 50%;
-}
-
-Wham {
-  position: fixed;
-  top: 0;
-  z-index: 999;
 }
