@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 function Mole(props) {
 
-    // Is this mole hiding?
     const [isHiding, setIsHiding] = useState(true);
 
     const moleClicked = () => {
@@ -15,11 +14,9 @@ function Mole(props) {
     };
 
     useEffect(() => {
-
-        // Get random seconds between .4 - 1.2
         const randSeconds = Math.floor(Math.random() * 1200) + 400;
 
-        // Set a time for the random seconds, and flip/flop the mole's hiding value
+        // Set a timer for the random seconds, and flip/flop the mole's hiding value
         const timer = setTimeout(() => setIsHiding(!isHiding), randSeconds);
 
         return () => clearTimeout(timer);
